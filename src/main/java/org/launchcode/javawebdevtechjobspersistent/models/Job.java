@@ -10,7 +10,6 @@ public class Job extends AbstractEntity{
 
     private String skills;
 
-
     public Job(Employer anEmployer, String someSkills) {
         super();
         this.employer = anEmployer;
