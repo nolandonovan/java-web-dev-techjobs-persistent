@@ -7,20 +7,20 @@ import javax.validation.constraints.Size;
 public class Skill extends AbstractEntity {
 
     @Size(max = 1500, message = "Skill's long description cannot be longer than 1,500 characters")
-    private String longDescription;
+    private String description;
 
-    public Skill(String longDescription) {
+    public Skill(String description) {
         super();
-        this.longDescription = longDescription;
+        this.description = description;
     }
 
     public Skill() {}
 
-    public String getLongDescription() {
-        return longDescription;
+    public String getDescription() {
+        return description;
     }
 
-    public void setLongDescription(String longDescription) {
-        this.longDescription = longDescription;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
